@@ -1,8 +1,9 @@
 require("dotenv").config();
 const app = require("./app");
+require("dotenv").config();
 
 // server
-const port = 5000 || 8000;
+const port = process.env.PORT || 8000;
 
 // testing api
 app.get("/", async (req, res) => {
